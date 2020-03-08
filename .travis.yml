@@ -7,4 +7,6 @@ install:
     - pip install pytest-cov
     - pip install coveralls
 script:
-    - pytest --cov=xprmind/
+    - pytest --cov=src/xprmind/
+after_success:
+  - coveralls
